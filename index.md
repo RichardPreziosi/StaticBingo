@@ -20,7 +20,7 @@ excerpt: This is the greatest bingo website on earth. I'm dead inside!
     }
 
     body {
-        background: #262522 url("tv.jpeg") no-repeat center;
+        background: #262522 url("https://github.com/RichardPreziosi/StaticBingo/blob/main/tv.jpeg?raw=true") no-repeat center;
         background-size: 125%;
     }
 
