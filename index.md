@@ -247,48 +247,7 @@ excerpt: This is the greatest bingo website on earth. I'm dead inside!
 <script type="text/javascript">
     $(document).ready(function() {
         // Array containing all of the potential square content and their descriptions, separated by "::".
-        var squares = [
-            'Tank misses provoke',
-            '"Wait no I wasn\'t ready" (8/8 ready)',
-            'Someone kills someone else with mechanic',
-            'Will forgot tank stance',
-            'Gabe forgot tank stance was on',
-            'Someone\'s playing a new job',
-            '"Ugh I messed up my rotation"',
-            'Someone pulls too early',
-            'Hudson internet',
-            'Card goes to wrong person',
-            'Tyler forgets to pre-draw card',
-            'Someone dies and they complain about messed up cd timing',
-            'Spend 15 minutes talking about 1 mechanic',
-            '"It\'s only Weiss"',
-            'Someone cleaved by tank buster',
-            'Taylor and Tyler rez same person',
-            'Will dies to tankbuster',
-            'Gabe speaks up and destroys someone',
-            'East vs West?????',
-            '"Wipe it up"',
-            'Oops I forgot the mechanic',
-            '"Server Tick" killed you',
-            'Aria gets TOO greedy',
-            'Gabe dies for our sins',
-            'Someone fantasia\'d',
-            'Backflip off the edge',
-            'Tank cleaves the party',
-            'Gold healing parse',
-            '15 second pull',
-            'Taylor tells us how big a crit he just got',
-            'Post funny memes instead of raiding',
-            'Aria forgets to press ready',
-            '"PLEASE PROVOKE AHHHH" - dead dps',
-            'Taylor talks about lewd mods',
-            '"Dagger!"',
-            'Someone starts shouting someone else\'s name then they die',
-            'Hey! new mechanic at least!',
-            'Bad party macros',
-            '"Buddy!"',
-            'Bad Puns'
-        ];
+        var squares = [];
         var randomDab = ['dabbedRed', 'dabbedBlue', 'dabbedYellow', 'dabbedGreen', 'dabbedPurple', 'dabbedOrange', 'dabbedBlack'];
         var isDabbed = ['cell12'];
         var bingoRow = [];
