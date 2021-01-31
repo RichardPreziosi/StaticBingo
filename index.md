@@ -14,6 +14,10 @@ excerpt: This is the greatest bingo website on earth. I'm dead inside!
         outline: 0;
         padding: 0;
     }
+    
+    html, body {
+        height: 100vh;
+    }
 
     body {
         background: #262522 url("tv.jpeg") no-repeat center;
