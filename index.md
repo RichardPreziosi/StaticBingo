@@ -487,8 +487,14 @@ excerpt: This is the greatest bingo website on earth. I'm dead inside!
         });
 
         // Initialize the card on page load
-        switchDab('dabbedRed', '#dabRed');
-        fillCard();
-        freeDab();
+        $.get('https://raw.githubusercontent.com/RichardPreziosi/StaticBingo/main/items.txt',
+                function (data) {
+                    squares = data.split('\n');
+                    switchDab('dabbedRed', '#dabRed');
+                    fillCard();
+                    freeDab();
+                }).fail(function() {
+                    alert( "There was an error loading the squares!" );
+                });
     });
 </script>
