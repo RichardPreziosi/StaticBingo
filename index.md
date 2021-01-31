@@ -448,7 +448,7 @@ excerpt: This is the greatest bingo website on earth. I'm dead inside!
         // Initialize the card on page load
         $.get('https://raw.githubusercontent.com/RichardPreziosi/StaticBingo/main/items.txt',
                 function (data) {
-                    squares = data.split('\n');
+                    squares = data.match(/.+/g);
                     switchDab('dabbedRed', '#dabRed');
                     fillCard();
                     freeDab();
