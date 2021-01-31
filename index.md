@@ -1,3 +1,10 @@
+---
+layout: default
+title: "Static Bingo"
+fulltitle: "Da Static - Static Bingo" 
+excerpt: This is the greatest bingo website on earth. I'm dead inside!
+---
+
 <style>
     @import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
 
