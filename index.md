@@ -17,13 +17,50 @@ excerpt: This is the greatest bingo website on earth. I'm dead inside!
     
     html, body {
         height: 100vh;
+        width: 100vw;
     }
 
     body {
-        background: #262522 url("https://github.com/RichardPreziosi/StaticBingo/blob/main/tv.jpeg?raw=true") no-repeat center;
-        background-size: 125%;
+        background: #262522;
+    }
+    
+    @media only screen and (min-width: 768px) {
+        body {
+            background: #262522 url(https://github.com/RichardPreziosi/StaticBingo/blob/main/tv.jpeg?raw=true) no-repeat center;
+            -webkit-background-size: 265%;
+            -moz-background-size: 265%;
+            -o-background-size: 265%;
+            background-size: 265%;
+        }
     }
 
+    @media only screen and (min-width: 1024px) {
+        body {
+            -webkit-background-size: 200%;
+            -moz-background-size: 200%;
+            -o-background-size: 200%;
+            background-size: 200%;
+        }
+    }
+
+    @media only screen and (min-width: 1440px) {
+        body {
+            -webkit-background-size: 150%;
+            -moz-background-size: 150%;
+            -o-background-size: 150%;
+            background-size: 150%;
+        }
+    }
+
+    @media only screen and (min-width: 2560px) {
+        body {
+            -webkit-background-size: 80%;
+            -moz-background-size: 80%;
+            -o-background-size: 80%;
+            background-size: 80%;
+        }
+    }
+    
     #wrapper {
         left: 50%;
         margin: auto;
