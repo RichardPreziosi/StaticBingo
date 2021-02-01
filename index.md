@@ -24,40 +24,45 @@ excerpt: This is the greatest bingo website on earth. I'm dead inside!
         background: #262522;
     }
     
-    @media only screen and (min-width: 768px) {
+    @media only screen and (max-width: 600px) {
+        body { background: #262522; }
+    }
+
+    @media only screen and (min-width: 600px) {
         body {
+            -moz-background-size: 320%;
+            -o-background-size: 320%;
+            -webkit-background-size: 320%;
             background: #262522 url(https://github.com/RichardPreziosi/StaticBingo/blob/main/tv.jpeg?raw=true) no-repeat center;
-            -webkit-background-size: 265%;
-            -moz-background-size: 265%;
-            -o-background-size: 265%;
-            background-size: 265%;
+            background-size: 320%;
         }
     }
 
-    @media only screen and (min-width: 1024px) {
+    @media only screen and (min-width: 768px) {
         body {
-            -webkit-background-size: 200%;
+            -moz-background-size: 260%;
+            -o-background-size: 260%;
+            -webkit-background-size: 260%;
+            background: #262522 url(https://github.com/RichardPreziosi/StaticBingo/blob/main/tv.jpeg?raw=true) no-repeat center;
+            background-size: 260%;
+        }
+    }
+    
+    @media only screen and (min-width: 992px) {
+        body {
             -moz-background-size: 200%;
             -o-background-size: 200%;
+            -webkit-background-size: 200%;
             background-size: 200%;
         }
     }
-
-    @media only screen and (min-width: 1440px) {
+    
+    @media only screen and (min-width: 1200px) {
         body {
-            -webkit-background-size: 150%;
             -moz-background-size: 150%;
             -o-background-size: 150%;
+            -webkit-background-size: 150%;
             background-size: 150%;
-        }
-    }
-
-    @media only screen and (min-width: 2560px) {
-        body {
-            -webkit-background-size: 80%;
-            -moz-background-size: 80%;
-            -o-background-size: 80%;
-            background-size: 80%;
         }
     }
     
