@@ -1,7 +1,4 @@
 
-<!DOCTYPE html>
-<html>
-<body>
     <style>
         @import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
 
@@ -496,7 +493,3 @@
                 });
     });
     </script>
-
-
-</body>
-</html>
