@@ -1,292 +1,289 @@
----
-layout: default
-title: "Static Bingo"
-fulltitle: "Da Static - Static Bingo" 
-excerpt: This is the greatest bingo website on earth. I'm dead inside!
----
 
-<style>
-    @import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+<!DOCTYPE html>
+<html>
+<body>
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
 
-    * {
-        border: 0;
-        margin: 0;
-        outline: 0;
-        padding: 0;
-    }
-    
-    html, body {
-        height: 100vh;
-        width: 100vw;
-    }
-
-    body {
-        background: #262522;
-    }
-    
-    @media only screen and (max-width: 600px) {
-        body { background: #262522; }
-    }
-
-    @media only screen and (min-width: 600px) {
-        body {
-            -moz-background-size: 320%;
-            -o-background-size: 320%;
-            -webkit-background-size: 320%;
-            background: #262522 url(https://github.com/RichardPreziosi/StaticBingo/blob/main/tv.jpeg?raw=true) no-repeat center;
-            background-size: 320%;
+        * {
+            border: 0;
+            margin: 0;
+            outline: 0;
+            padding: 0;
         }
-    }
 
-    @media only screen and (min-width: 768px) {
-        body {
-            -moz-background-size: 260%;
-            -o-background-size: 260%;
-            -webkit-background-size: 260%;
-            background: #262522 url(https://github.com/RichardPreziosi/StaticBingo/blob/main/tv.jpeg?raw=true) no-repeat center;
-            background-size: 260%;
+        html, body {
+            height: 100vh;
+            width: 100vw;
         }
-    }
-    
-    @media only screen and (min-width: 992px) {
-        body {
-            -moz-background-size: 200%;
-            -o-background-size: 200%;
-            -webkit-background-size: 200%;
-            background-size: 200%;
-        }
-    }
-    
-    @media only screen and (min-width: 1200px) {
-        body {
-            -moz-background-size: 150%;
-            -o-background-size: 150%;
-            -webkit-background-size: 150%;
-            background-size: 150%;
-        }
-    }
-    
-    #wrapper {
-        left: 50%;
-        margin: auto;
-        margin: 0;
-        position: absolute;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        width: 640px;
-    }
 
-    #card {
-        color: #fff;
-        margin: 0 auto;
-        position: absolute;
-        text-align: center;
-        display: grid;
-        grid-gap: 10px;
-        grid-template-rows: repeat(5, 80px);
-        grid-template-columns: repeat(5, 100px);
-    }
+        body {
+            background: #262522 url(https://github.com/RichardPreziosi/StaticBingo/blob/main/background.jpeg?raw=true) no-repeat center;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            -webkit-background-size: cover;
+            background-size: cover;
+        }
 
-        #card > div {
-            background: #393939;
-            display: flex;
-            align-items: center;
+        #wrapper {
+            left: 50%;
+            margin: auto;
+            margin: 0;
+            height: 590px;
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 710px;
+            padding: 20px;
+            background: rgba(100, 100, 100, 0.5)
+        }
+
+        #card {
+            color: #fff;
+            margin: 0 auto;
+            position: absolute;
             text-align: center;
-            justify-content: center;
-            position: relative;
-            cursor: pointer;
-            user-select: none;
-            box-sizing: border-box;
-            padding: 5px;
-            min-width: 0;
+            display: grid;
+            grid-gap: 10px;
+            grid-template-rows: repeat(5, 110px);
+            grid-template-columns: repeat(5, 110px);
         }
 
-            #card > div:hover {
-                -moz-box-shadow: inset 0 0 35px rgba(187, 187, 187, 0.25);
-                -moz-transition-duration: 0.25s;
-                -o-transition-duration: 0.25s;
-                -webkit-box-shadow: inset 0 0 35px rgba(187, 187, 187, 0.25);
-                -webkit-transition-duration: 0.25s;
-                box-shadow: inset 0 0 35px rgba(187, 187, 187, 0.25);
-                transition-duration: 0.25s;
+            #card > div {
+                background: #393939;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                justify-content: center;
+                position: relative;
+                cursor: pointer;
+                user-select: none;
+                box-sizing: border-box;
+                padding: 5px;
+                min-width: 0;
             }
 
-            #card > div > span {
-                display: block; /* Fallback for non-webkit */
-                display: -webkit-box;
-                margin: 0 auto;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                font: 14px arial;
-                max-height: 70px;
-                -webkit-line-clamp: 4;
-                -webkit-box-orient: vertical;
+                #card > div:hover {
+                    -moz-box-shadow: inset 0 0 35px rgba(187, 187, 187, 0.25);
+                    -moz-transition-duration: 0.25s;
+                    -o-transition-duration: 0.25s;
+                    -webkit-box-shadow: inset 0 0 35px rgba(187, 187, 187, 0.25);
+                    -webkit-transition-duration: 0.25s;
+                    box-shadow: inset 0 0 35px rgba(187, 187, 187, 0.25);
+                    transition-duration: 0.25s;
+                }
+
+                #card > div > span {
+                    display: block; /* Fallback for non-webkit */
+                    display: -webkit-box;
+                    margin: 0 auto;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    font: 14px arial;
+                    max-height: 90px;
+                    -webkit-line-clamp: 6;
+                    -webkit-box-orient: vertical;
+                }
+
+            #card .dabbedRed {
+                background: #ff0000;
             }
 
-    #card .dabbedRed { background: #ff0000; }
+            #card .dabbedBlue {
+                background: #0000ff;
+            }
 
-    #card .dabbedBlue { background: #0000ff; }
+            #card .dabbedYellow {
+                background: #e6e607;
+            }
 
-    #card .dabbedYellow { background: #e6e607; }
+            #card .dabbedGreen {
+                background: #008000;
+            }
 
-    #card .dabbedGreen { background: #008000; }
+            #card .dabbedPurple {
+                background: #800080;
+            }
 
-    #card .dabbedPurple { background: #800080; }
+            #card .dabbedOrange {
+                background: #ffa500;
+            }
 
-    #card .dabbedOrange { background: #ffa500; }
+            #card .dabbedBlack {
+                background: #000000;
+            }
 
-    #card .dabbedBlack { background: #000000; }
+        #menu {
+            left: 610px;
+            position: relative;
+            width: 100px;
+        }
 
-    #menu {
-        left: 560px;
-        position: relative;
-        width: 100px;
-    }
+            #menu #scoreboard {
+                color: #fff;
+                font: 12px roboto;
+                height: 180px;
+                text-align: center;
+                width: 100px;
+            }
 
-    #menu #scoreboard {
-        color: #fff;
-        font: 12px roboto;
-        height: 180px;
-        text-align: center;
-        width: 100px;
-    }
+                #menu #scoreboard .title {
+                    letter-spacing: 1px;
+                    padding-top: 9px;
+                }
 
-    #menu #scoreboard .title {
-        letter-spacing: 1px;
-        padding-top: 9px;
-    }
+                #menu #scoreboard .score {
+                    font-size: 30px;
+                }
 
-    #menu #scoreboard .score { font-size: 30px; }
+            #menu .cardFunction {
+                background: rgba(34, 34, 34, 0.6);
+                color: #fff;
+                font: 12px/45px roboto;
+                height: 45px;
+                margin-top: 10px;
+                width: 100px;
+                cursor: pointer;
+            }
 
-    #menu .cardFunction {
-        background: rgba(34, 34, 34, 0.6);
-        color: #fff;
-        font: 12px/45px roboto;
-        height: 45px;
-        margin-top: 10px;
-        width: 100px;
-        cursor: pointer;
-    }
+                #menu .cardFunction:hover {
+                    -moz-transition-duration: 0.25s;
+                    -o-transition-duration: 0.25s;
+                    -webkit-transition-duration: 0.25s;
+                    background: #222222;
+                    transition-duration: 0.25s;
+                }
 
-    #menu .cardFunction:hover {
-        -moz-transition-duration: 0.25s;
-        -o-transition-duration: 0.25s;
-        -webkit-transition-duration: 0.25s;
-        background: #222222;
-        transition-duration: 0.25s;
-    }
+            #menu #palette {
+                background: rgba(34, 34, 34, 0.6);
+                color: white;
+                font: 12px/28px roboto;
+                margin-top: 10px;
+                text-align: center;
+            }
 
-    #menu #palette {
-        background: rgba(34, 34, 34, 0.6);
-        color: white;
-        font: 12px/28px roboto;
-        margin-top: 10px;
-        text-align: center;
-    }
+                #menu #palette .dabSelect {
+                    border-radius: 24px;
+                    float: left;
+                    height: 44px;
+                    margin: 0 0 4px 4px;
+                    vertical-align: top;
+                    width: 44px;
+                }
 
-    #menu #palette .dabSelect {
-        border-radius: 24px;
-        float: left;
-        height: 44px;
-        margin: 0 0 4px 4px;
-        vertical-align: top;
-        width: 44px;
-    }
+                    #menu #palette .dabSelect:hover {
+                        border: 3px solid #fff;
+                    }
 
-    #menu #palette .dabSelect:hover { border: 3px solid #fff; }
+                #menu #palette #dabRed {
+                    background: #ff0000;
+                }
 
-    #menu #palette #dabRed { background: #ff0000; }
+                #menu #palette #dabBlue {
+                    background: #0000ff;
+                }
 
-    #menu #palette #dabBlue { background: #0000ff; }
+                #menu #palette #dabYellow {
+                    background: #e6e607;
+                }
 
-    #menu #palette #dabYellow { background: #e6e607; }
+                #menu #palette #dabGreen {
+                    background: #008000;
+                }
 
-    #menu #palette #dabGreen { background: #008000; }
+                #menu #palette #dabPurple {
+                    background: #800080;
+                }
 
-    #menu #palette #dabPurple { background: #800080; }
+                #menu #palette #dabOrange {
+                    background: #ffa500;
+                }
 
-    #menu #palette #dabOrange { background: #ffa500; }
+                #menu #palette #dabBlack {
+                    background: #000000;
+                }
 
-    #menu #palette #dabBlack { background: #000000; }
+                #menu #palette #dabRandom {
+                    background: #ffffff;
+                    font: 20px roboto;
+                }
 
-    #menu #palette #dabRandom {
-        background: #ffffff;
-        font: 20px roboto;
-    }
+                #menu #palette .dabActive {
+                    border: 3px solid #aaa;
+                }
 
-    #menu #palette .dabActive { border: 3px solid #aaa; }
+        #credit {
+            font: 12px roboto;
+            letter-spacing: 2px;
+            margin-top: 10px;
+            text-align: center;
+            text-shadow: -1px -1px #888;
+            width: 100%;
+        }
 
-    #credit {
-        font: 12px roboto;
-        letter-spacing: 2px;
-        margin-top: 10px;
-        text-align: center;
-        text-shadow: -1px -1px #888;
-        width: 100%;
-    }
+            #credit a {
+                color: #111;
+                text-decoration: none;
+            }
 
-    #credit a {
-        color: #111;
-        text-decoration: none;
-    }
+                #credit a:hover {
+                    text-shadow: 1px 1px #888;
+                }
+    </style>
 
-    #credit a:hover { text-shadow: 1px 1px #888; }
-
-</style>
-
-<div id="wrapper">
-    <div id="card">
-        <div id="cell0"><span></span></div>
-        <div id="cell1"><span></span></div>
-        <div id="cell2"><span></span></div>
-        <div id="cell3"><span></span></div>
-        <div id="cell4"><span></span></div>
-        <div id="cell5"><span></span></div>
-        <div id="cell6"><span></span></div>
-        <div id="cell7"><span></span></div>
-        <div id="cell8"><span></span></div>
-        <div id="cell9"><span></span></div>
-        <div id="cell10"><span></span></div>
-        <div id="cell11"><span></span></div>
-        <div id="cell12"><span></span></div>
-        <div id="cell13"><span></span></div>
-        <div id="cell14"><span></span></div>
-        <div id="cell15"><span></span></div>
-        <div id="cell16"><span></span></div>
-        <div id="cell17"><span></span></div>
-        <div id="cell18"><span></span></div>
-        <div id="cell19"><span></span></div>
-        <div id="cell20"><span></span></div>
-        <div id="cell21"><span></span></div>
-        <div id="cell22"><span></span></div>
-        <div id="cell23"><span></span></div>
-        <div id="cell24"><span></span></div>
-    </div>
-    <div id="menu">
-        <div id="scoreboard">
-            <p class="title">ROWS</p>
-            <p class="score"><span id="scoreRow">0</span>/5</p>
-            <p class="title">COLUMNS</p>
-            <p class="score"><span id="scoreCol">0</span>/5</p>
-            <p class="title">DIAGONALS</p>
-            <p class="score"><span id="scoreDiag">0</span>/2</p>
+    <div id="wrapper">
+        <div id="card">
+            <div id="cell0"><span></span></div>
+            <div id="cell1"><span></span></div>
+            <div id="cell2"><span></span></div>
+            <div id="cell3"><span></span></div>
+            <div id="cell4"><span></span></div>
+            <div id="cell5"><span></span></div>
+            <div id="cell6"><span></span></div>
+            <div id="cell7"><span></span></div>
+            <div id="cell8"><span></span></div>
+            <div id="cell9"><span></span></div>
+            <div id="cell10"><span></span></div>
+            <div id="cell11"><span></span></div>
+            <div id="cell12"><span></span></div>
+            <div id="cell13"><span></span></div>
+            <div id="cell14"><span></span></div>
+            <div id="cell15"><span></span></div>
+            <div id="cell16"><span></span></div>
+            <div id="cell17"><span></span></div>
+            <div id="cell18"><span></span></div>
+            <div id="cell19"><span></span></div>
+            <div id="cell20"><span></span></div>
+            <div id="cell21"><span></span></div>
+            <div id="cell22"><span></span></div>
+            <div id="cell23"><span></span></div>
+            <div id="cell24"><span></span></div>
         </div>
-        <button class="cardFunction" id="newCard">NEW CARD</button>
-        <button class="cardFunction" id="cleanCard">CLEAR</button>
-        <div id="palette">
-            <button class="dabSelect" id="dabRed"></button>
-            <button class="dabSelect" id="dabBlue"></button>
-            <button class="dabSelect" id="dabYellow"></button>
-            <button class="dabSelect" id="dabGreen"></button>
-            <button class="dabSelect" id="dabPurple"></button>
-            <button class="dabSelect" id="dabOrange"></button>
+        <div id="menu">
+            <div id="scoreboard">
+                <p class="title">ROWS</p>
+                <p class="score"><span id="scoreRow">0</span>/5</p>
+                <p class="title">COLUMNS</p>
+                <p class="score"><span id="scoreCol">0</span>/5</p>
+                <p class="title">DIAGONALS</p>
+                <p class="score"><span id="scoreDiag">0</span>/2</p>
+            </div>
+            <button class="cardFunction" id="newCard">NEW CARD</button>
+            <button class="cardFunction" id="cleanCard">CLEAR</button>
+            <div id="palette">
+                <button class="dabSelect" id="dabRed"></button>
+                <button class="dabSelect" id="dabBlue"></button>
+                <button class="dabSelect" id="dabYellow"></button>
+                <button class="dabSelect" id="dabGreen"></button>
+                <button class="dabSelect" id="dabPurple"></button>
+                <button class="dabSelect" id="dabOrange"></button>
+            </div>
         </div>
     </div>
-</div>
 
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
-<script type="text/javascript">
+    <script type="text/javascript">
     $(document).ready(function() {
         // Array containing all of the potential square content and their descriptions, separated by "::".
         var squares = [];
@@ -498,4 +495,8 @@ excerpt: This is the greatest bingo website on earth. I'm dead inside!
                     alert( "There was an error loading the squares!" );
                 });
     });
-</script>
+    </script>
+
+
+</body>
+</html>
